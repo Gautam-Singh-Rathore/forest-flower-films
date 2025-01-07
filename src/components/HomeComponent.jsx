@@ -32,7 +32,7 @@ const HomeComponent = () => {
       {/* Work  */}
       <div>
         {/* Container  */}
-        <div className="px-12 lg:px-[20vw] md:px-[10vw] py-10 ">
+        <div className="px-4 lg:px-[20vw] md:px-[10vw] py-10 ">
           <h1 className="text-3xl md:text-4xl text-white text-center font-extrabold pb-8">
             Recent Work
           </h1>
