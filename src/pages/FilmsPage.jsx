@@ -11,13 +11,13 @@ const FilmsPage = () => {
           My Films{" "}
         </h1>
       </div>
-      <div className="border-b-[1px] border-gray-600"></div>
+      {/* <div className="border-b-[1px] border-gray-600"></div> */}
 
       <div className="flex items-center justify-center py-10 text-3xl font-semibold">
         <h1>All Time Films</h1>
       </div>
 
-      <div className="border-b-[1px] border-gray-600"></div>
+      {/* <div className="border-b-[1px] border-gray-600"></div> */}
 
       {/* Container  */}
       <div className="px-4 lg:px-[20vw] md:px-[10vw] py-10">
@@ -78,7 +78,7 @@ const FilmsPage = () => {
         </div>
       </div>
 
-      <div className="border-b-[1px] border-gray-600"></div>
+      {/* <div className="border-b-[1px] border-gray-600"></div> */}
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-black w-full h-[14vh] flex justify-between items-center lg:px-40 transition-all">
+    <div className="bg-black w-full h-[10vh] lg:h-[14vh] flex justify-between items-center lg:px-40 transition-all">
       {/* Logo  */}
       <div className="h-full w-max flex justify-center items-center">
         <div className=" h-full flex items-center justify-center">

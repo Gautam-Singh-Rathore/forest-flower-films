@@ -3,7 +3,7 @@ import bgvideo from "../../public/assets/bgvideo.mp4"
 
 const HeroSection = () => {
   return (
-    <div className='relative w-full h-[43vh] md:h-screen overflow-hidden bg-black z-[-2] flex items-center  border-b-[1px] border-gray-600 '>
+    <div className='relative w-full h-[43vh] lg:h-screen overflow-hidden bg-black z-[-2] flex items-center '>
         <video
         src={bgvideo}
         autoPlay
@@ -13,7 +13,7 @@ const HeroSection = () => {
       />
         <div className='text-whitew-max pl-40 pb-40 hidden lg:block'>
             <h1 className='text-white text-[50px] font-semibold mb-4'>Nidhi Saxena</h1>
-            <p className='font-semibold text-gray-400 text-xl pt-4'>Filmmaker, Writer and Visual Storyteller</p>
+            <p className='font-semibold text-gray-400 text-xl pt-3'>Filmmaker, Writer and Visual Storyteller</p>
         </div>
       
     </div>

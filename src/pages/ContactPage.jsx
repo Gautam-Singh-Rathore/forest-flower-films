@@ -10,7 +10,7 @@ const ContactPage = () => {
           Contact Me{" "}
         </h1>
       </div>
-      <div className="border-b-[1px] border-gray-600"></div>
+      {/* <div className="border-b-[1px] border-gray-600"></div> */}
 
       <div class="px-4 lg:px-[20vw] md:px-[10vw] mx-auto p-4 py-20">
         <form class="space-y-6">
@@ -85,7 +85,7 @@ const ContactPage = () => {
 
      
 
-      <div className="border-b-[1px] border-gray-600"></div>
+      {/* <div className="border-b-[1px] border-gray-600"></div> */}
     </div>
   );
 };

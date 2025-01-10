@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div className='py-6  px-4 lg:px-[20vw] md:px-[10vw]'>
         <img src={profile} className='' />
       </div>
-      <div className='border-b-[1px] border-gray-600'>
+      <div className=''>
       </div>
       <div className='py-6 px-4 lg:px-[20vw] md:px-[10vw] leading-7'>
         <p className='text-xl font-extrabold'>Nidhi Saxena – Filmmaker, Writer, and Visual Storyteller</p>
