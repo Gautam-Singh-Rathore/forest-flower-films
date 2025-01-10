@@ -4,6 +4,7 @@ import ContactPage from "../pages/ContactPage";
 import FilmsPage from "../pages/FilmsPage";
 import HomePage from "../pages/HomePage";
 import App from "../App";
+import RecognitionPage from "../pages/RecognitionPage";
 
 export const myRoute = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const myRoute = createBrowserRouter([
             {
                 path:"/films",
                 element:<FilmsPage/>
+            },
+            {
+                path:"/recognition",
+                element:<RecognitionPage/>
             }
         ]
     },

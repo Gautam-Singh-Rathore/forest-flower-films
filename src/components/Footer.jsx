@@ -11,10 +11,10 @@ const Footer = () => {
     const navigate = useNavigate();
 
   return (
-    <div className="bg-black w-full text-white min-h-screen px-4 lg:px-[20vw] md:px-[10vw] flex flex-col justify-around gap-10">
+    <div className="border-t-[1px] border-gray-800  bg-black w-full text-white min-h-screen px-4 lg:px-[20vw] md:px-[10vw] flex flex-col justify-around gap-10">
       {/* Follow me  */}
       <div className=" flex flex-col lg:flex-row gap-8 lg:gap-0 pt-4  justify-between items-center">
-        <p className="text-3xl lg:text-4xl font-extrabold">Follow Me.</p>
+        <p className="text-3xl lg:text-4xl font-extrabold">Follow Us.</p>
         
       </div>
     <div className="flex flex-col md:flex-row gap-10 w-full justify-between items-center">
