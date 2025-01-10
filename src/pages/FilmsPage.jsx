@@ -22,7 +22,7 @@ const FilmsPage = () => {
       {/* Container  */}
       <div className="px-4 lg:px-[20vw] md:px-[10vw] py-10">
         {/* Card  */}
-        <div className="w-full  border-gray-700 border-[2px] h-max rounded-3xl flex flex-col md:flex-row hover:scale-105 transition-all cursor-pointer">
+        <div className="w-full  border-gray-700 h-max rounded-3xl flex flex-col md:flex-row cursor-pointer">
           <div className="w-full md:w-[50%] p-2">
             <p className=" text-lg font-bold py-2 text-center">
               Sad Letters of an Imaginary Woman

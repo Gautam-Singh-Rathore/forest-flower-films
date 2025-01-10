@@ -7,7 +7,7 @@ const HomeComponent = () => {
     <div className="bg-black text-white">
       {/* About  */}
       <div className="px-12 lg:px-[20vw] md:px-[10vw] py-16 ">
-        <div className="w-full  flex flex-col md:flex-row border-2 border-gray-700 rounded-3xl cursor-pointer ">
+        <div className="w-full  flex flex-col md:flex-row  border-gray-700 rounded-3xl cursor-pointer ">
           {/* Image  */}
           <div className="w-full  p-4">
             <img src={image} alt="" className="rounded-lg" />
@@ -37,7 +37,7 @@ const HomeComponent = () => {
             Recent Work
           </h1>
           {/* Card  */}
-          <div className="w-full  border-gray-700 border-[2px] h-max rounded-3xl flex flex-col md:flex-row cursor-pointer">
+          <div className="w-full  border-gray-700  h-max rounded-3xl flex flex-col md:flex-row cursor-pointer">
             <div className="w-full md:w-[50%] p-2">
               <p className="text-white text-lg font-bold py-2 text-center">
                 Sad Letters of an Imaginary Woman
