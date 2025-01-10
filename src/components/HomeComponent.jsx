@@ -76,7 +76,7 @@ const HomeComponent = () => {
                     </div>
         
                     {/* Action Buttons */}
-                    <div className="flex flex-row justify-between gap-4 mt-6">
+                    <div className="flex flex-col  justify-between gap-4 mt-6">
                       <button
                         onClick={() =>
                           (window.location.href =
