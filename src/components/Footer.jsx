@@ -13,13 +13,13 @@ const Footer = () => {
   return (
     <div className="bg-black w-full text-white min-h-screen px-4 lg:px-[20vw] md:px-[10vw] flex flex-col justify-around gap-10">
       {/* Follow me  */}
-      <div className=" flex flex-col lg:flex-row gap-8 lg:gap-0   justify-between items-center">
+      <div className=" flex flex-col lg:flex-row gap-8 lg:gap-0 pt-4  justify-between items-center">
         <p className="text-3xl lg:text-4xl font-extrabold">Follow Me.</p>
         
       </div>
     <div className="flex flex-col md:flex-row gap-10 w-full justify-between items-center">
 {/* Email and phone  */}
-      <div className="w-full md:w-[45%] flex flex-col gap-4 text-sm lg:text-lg text-gray-300 px-10 lg:px-0">
+      <div className="py-10 w-full md:w-[45%] flex flex-col gap-4 text-sm lg:text-lg text-gray-300 px-10 lg:px-0">
         <p>+91-7895817157</p>
         <p>+91-9460144678</p>
         <p>producer@forestflowerfilms.com</p>
