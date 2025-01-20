@@ -48,7 +48,7 @@ const Header = () => {
                 <li onClick={()=> {navigate("/"); setIsVisible(false)}}>Home</li>
                 <li onClick={()=> {navigate("/films"); setIsVisible(false)}}>Films</li>
                 <li onClick={()=> {navigate("/about"); setIsVisible(false)}}>About</li>
-                {/* <li onClick={()=> {navigate("/about"); setIsVisible(false)}}>Screening Events</li> */}
+                <li onClick={()=> {navigate("/recognition"); setIsVisible(false)}}>Recognition</li>
                 <li onClick={()=> {navigate("/contact"); setIsVisible(false)}}>Contact</li>
             </div>
 
