@@ -28,7 +28,7 @@ const FilmsPage = () => {
             <img
               src={film}
               alt="Film Poster"
-              className="w-full h-[300px] md:h-auto object-cover rounded-lg"
+              className="w-full h-[300px] md:h-auto object-cover rounded-lg" 
             />
           </div>
 
