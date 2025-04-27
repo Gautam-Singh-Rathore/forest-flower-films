@@ -19,11 +19,11 @@ const FilmsPage = () => {
 
       {/* <div className="border-b-[1px] border-gray-600"></div> */}
 
-      {/* Container  */}
-      <div className="px-4 lg:px-[10vw] py-10 flex justify-center">
-        {/* Film Card */}
+      {/* Container  */}    
+      <div className="px-4 lg:px-[10vw] py-10 flex justify-center">    
+        {/* Film Card */}     
         <div className="w-full max-w-4xl bg-black p-6 rounded-xl shadow-lg flex flex-col md:flex-row gap-6 cursor-pointer ">
-          {/* Left Section: Image */}
+          {/* Left Section: Image */}    
           <div className="w-full md:w-[40%]">
             <img
               src={film}
