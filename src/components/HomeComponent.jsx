@@ -1,6 +1,9 @@
 import React from "react";
 import MediaCard from "./MediaCard";
 import image from "../../public/assets/profile.jpg";
+import film1_vert from "../../public/assets/film1_vert.jpg";
+import film1_hor from "../../public/assets/film1_hor.png";
+import FilmCard from "./FilmCard";
 
 const HomeComponent = () => {
   const articles = [
@@ -13,14 +16,12 @@ const HomeComponent = () => {
       url: "https://variety.com/2025/film/news/richa-chadha-ali-fazal-venice-secrets-of-a-mountain-serpent-1236467779/",
     },
     {
-      title:
-        "Exploring The Effects Of Trauma On Memory With An Indian Director",
+      title: "Exploring The Effects Of Trauma On Memory With An Indian Director",
       image:
         "https://specials-images.forbesimg.com/imageserve/671e7634d130d62bd867d8a6/A-still-from-Nidhi-Saxena-s-Sad-Letter-of-an-Imaginary-Woman-/960x0.jpg?cropX1=0&cropX2=1600&cropY1=0&cropY2=900",
       source: "Forbes",
       url: "https://www.forbes.com/sites/swetakaushal/2024/10/31/exploring-the-effects-of-trauma-on-memory-with-an-indian-director/",
     },
-
     {
       title:
         "Nidhi Saxena’s Sad Letters of an Imaginary Woman captivates audiences at Busan International Film Festival 2024: “Cinema can instigate or draw attention”",
@@ -30,6 +31,26 @@ const HomeComponent = () => {
       url: "https://www.bollywoodhungama.com/news/features/nidhi-saxenas-sad-letters-imaginary-woman-captivates-audiences-busan-international-film-festival-2024-cinema-can-instigate-draw-attention/",
     },
   ];
+
+  const filmData = [
+    {
+      title: "Sad Letters of an Imaginary Woman",
+      posterVertical: film1_vert,
+      posterHorizontal: film1_hor,
+      imdb: "https://www.imdb.com/title/tt33450429/",
+      year: 2024,
+      festivals: [
+        "Busan International Film Festival",
+        "IFFLA",
+        "MIFF",
+        "Bengaluru IFF",
+      ],
+      status: "Premiered",
+      summary:
+        "A lyrical meditation on memory, longing, and fragmented time, the film follows the haunting interior world of a woman navigating absence and the passage of seasons.",
+    },
+  ];
+
   return (
     <div className="bg-black text-white">
       {/* About Section */}
@@ -71,14 +92,42 @@ const HomeComponent = () => {
         </div>
       </section>
 
-      {/* Latest Fims Section  */}
-
-      {/* Latets Articles  */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-[10vw] lg:px-[12vw] py-16">
-        {articles.map((article, index) => (
-          <MediaCard key={index} article={article} />
+      {/* Latest Films Section */}
+      <div className="px-4 md:px-[10vw] lg:px-[12vw] pb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+          Latest Work
+        </h2>
+        {filmData.map((film, idx) => (
+          <FilmCard key={idx} film={film} />
         ))}
-        
+        <div className="flex justify-center mt-[-24px] ">
+          <a
+            href="/films"
+            className="text-sm md:text-base px-6 py-3  bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition"
+          >
+            View All Films
+          </a>
+        </div>
+      </div>
+
+      {/* Latest Articles Section */}
+      <div className="px-4 md:px-[10vw] lg:px-[12vw] pb-20">
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+          In the Media
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {articles.map((article, index) => (
+            <MediaCard key={index} article={article} />
+          ))}
+        </div>
+        <div className="flex justify-center mt-4">
+          <a
+            href="/media"
+            className="text-sm md:text-base px-6 py-3 bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition"
+          >
+            Read More
+          </a>
+        </div>
       </div>
     </div>
   );

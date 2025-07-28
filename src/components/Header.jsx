@@ -23,7 +23,7 @@ const Header = () => {
         <ul className="flex justify-center items-center gap-8 text-sm text-gray-200 ">
           <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/")}>Home</li>
           <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/films")}>Films</li>
-          <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/recognition")}>Recognition</li>
+          {/* <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/recognition")}>Recognition</li> */}
           <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/about")}>About</li>
           {/* <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/about")}>
             Screening Events
@@ -48,7 +48,7 @@ const Header = () => {
                 <li onClick={()=> {navigate("/"); setIsVisible(false)}}>Home</li>
                 <li onClick={()=> {navigate("/films"); setIsVisible(false)}}>Films</li>
                 <li onClick={()=> {navigate("/about"); setIsVisible(false)}}>About</li>
-                <li onClick={()=> {navigate("/recognition"); setIsVisible(false)}}>Recognition</li>
+                {/* <li onClick={()=> {navigate("/recognition"); setIsVisible(false)}}>Recognition</li> */}
                 <li onClick={()=> {navigate("/media"); setIsVisible(false)}}>Media</li>
             </div>
 
