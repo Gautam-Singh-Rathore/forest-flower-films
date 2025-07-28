@@ -16,7 +16,7 @@ const Footer = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",     
+        "service_q5mu00f",     
         "template_rbh6o78",    
         formRef.current,
         "e51q4UsC28CfLxfrN"

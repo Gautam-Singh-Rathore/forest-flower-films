@@ -4,8 +4,10 @@ import image from "../../public/assets/profile.jpg";
 import f1 from "../../public/assets/f1.jpg";
 import f2 from "../../public/assets/f2.png";
 import FilmCard from "./FilmCard";
+import { useNavigate } from "react-router";
 
 const HomeComponent = () => {
+  const navigate = useNavigate();
   const articles = [
     {
       title:
@@ -63,6 +65,7 @@ const HomeComponent = () => {
   ];
 
   return (
+
     <div className="bg-black text-white">
       {/* About Section */}
       <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-[10vw] lg:px-[12vw] py-16 gap-10">
@@ -169,12 +172,12 @@ const HomeComponent = () => {
         </div>
 
         <div className="flex justify-center mt-10">
-          <a
-            href="/films"
-            className="text-sm md:text-base px-6 py-3 bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition"
+          <p
+            className="text-sm md:text-base px-6 py-3 bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition cursor-pointer"
+            onClick={()=>{navigate("/films")}}
           >
             View All Films
-          </a>
+          </p>
         </div>
       </div>
 
@@ -189,12 +192,12 @@ const HomeComponent = () => {
           ))}
         </div>
         <div className="flex justify-center mt-4">
-          <a
-            href="/media"
-            className="text-sm md:text-base px-6 py-3 bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition"
+          <p
+            className="text-sm md:text-base px-6 py-3 bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition cursor-pointer"
+            onClick={()=>{navigate("/media")}}
           >
             Read More
-          </a>
+          </p>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const FilmCard = ({ film }) => {
       </div>
 
       {/* Right: Content Section */}
-      <div className="w-full lg:w-2/3 bg-zinc-950 p-5 sm:p-6 md:p-8 flex flex-col gap-6 justify-between">
+      <div className="w-full lg:w-2/3  p-5 sm:p-6 md:p-8 flex flex-col gap-6 justify-between">
         
         {/* Top: Horizontal Poster */}
         <div className="rounded-2xl overflow-hidden shadow-lg border border-zinc-800">
