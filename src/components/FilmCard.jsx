@@ -1,5 +1,6 @@
 import React from "react";
 import { FaImdb } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa6";
 
 const FilmCard = ({ film }) => {
   return (
@@ -35,16 +36,16 @@ const FilmCard = ({ film }) => {
             {film.year} • {film.status}
           </p>
           <p className="text-sm sm:text-md text-amber-400 italic tracking-wide">
-            Festivals: {film.festivals.join(", ")}
+            Premiers: {film.festivals.join(", ")}
           </p>
           <p className="text-sm sm:text-md text-gray-300 leading-relaxed mt-1">
             {film.summary}
           </p>
         </div>
 
-        {/* Bottom: IMDb */}
-        {film.imdb && (
-          <div className="mt-4">
+        {/* Bottom: Links */}
+        <div className="mt-4 flex flex-wrap gap-4">
+          {film.imdb && (
             <a
               href={film.imdb}
               target="_blank"
@@ -54,8 +55,19 @@ const FilmCard = ({ film }) => {
               <FaImdb size={24} />
               <span>View on IMDb</span>
             </a>
-          </div>
-        )}
+          )}
+          {film.trailer && (
+            <a
+              href={film.trailer}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors text-base sm:text-lg font-semibold"
+            >
+              <FaYoutube size={22} />
+              <span className="text-white">Watch Trailer</span>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

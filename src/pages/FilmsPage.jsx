@@ -13,6 +13,7 @@ const FilmsPage = () => {
       posterHorizontal: film1_hor,
       imdb: "https://www.imdb.com/title/tt33450429/",
       year: 2024,
+      trailer: "https://www.youtube.com/watch?v=YvvemSwlczw",
       festivals: ["Busan International Film Festival", "IFFLA", "MIFF", "Bengaluru IFF"],
       status: "Premiered",
       summary:
