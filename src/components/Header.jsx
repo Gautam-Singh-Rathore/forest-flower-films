@@ -28,7 +28,7 @@ const Header = () => {
           {/* <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/about")}>
             Screening Events
           </li> */}
-          <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/contact")}>Contact</li>
+          <li className="hover:text-gray-400 cursor-pointer" onClick={()=> navigate("/media")}>Media</li>
         </ul>
       </div>
 
@@ -49,7 +49,7 @@ const Header = () => {
                 <li onClick={()=> {navigate("/films"); setIsVisible(false)}}>Films</li>
                 <li onClick={()=> {navigate("/about"); setIsVisible(false)}}>About</li>
                 <li onClick={()=> {navigate("/recognition"); setIsVisible(false)}}>Recognition</li>
-                <li onClick={()=> {navigate("/contact"); setIsVisible(false)}}>Contact</li>
+                <li onClick={()=> {navigate("/media"); setIsVisible(false)}}>Media</li>
             </div>
 
 

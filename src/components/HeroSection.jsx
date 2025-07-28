@@ -11,10 +11,10 @@ const HeroSection = () => {
         muted
         className="w-full h-[50vh] lg:h-full object-contain absolute top-0 z-[-1]"
       />
-        <div className='text-whitew-max pl-40 pb-40 hidden lg:block'>
+        {/* <div className='text-whitew-max pl-40 pb-40 hidden lg:block'>
             <h1 className='text-white text-[50px] font-semibold mb-4'>Nidhi Saxena</h1>
             <p className='font-semibold text-gray-400 text-xl pt-3'>Filmmaker, Writer and Visual Storyteller</p>
-        </div>
+        </div> */}
       
     </div>
   )

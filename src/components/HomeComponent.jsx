@@ -1,106 +1,85 @@
 import React from "react";
-import film from "../../public/assets/film.jpg";
-import image from "../../public/assets/about.jpg";
+import MediaCard from "./MediaCard";
+import image from "../../public/assets/profile.jpg";
 
 const HomeComponent = () => {
+  const articles = [
+    {
+      title:
+        "Richa Chadha, Ali Fazal’s Pushing Buttons Studios Boards Venice-Bound ‘Secrets of a Mountain Serpent’ (EXCLUSIVE)",
+      image:
+        "https://variety.com/wp-content/uploads/2025/07/Secrets-of-a-Mountain-Serpent-1.jpg?w=1000&h=667&crop=1",
+      source: "Variety",
+      url: "https://variety.com/2025/film/news/richa-chadha-ali-fazal-venice-secrets-of-a-mountain-serpent-1236467779/",
+    },
+    {
+      title:
+        "Exploring The Effects Of Trauma On Memory With An Indian Director",
+      image:
+        "https://specials-images.forbesimg.com/imageserve/671e7634d130d62bd867d8a6/A-still-from-Nidhi-Saxena-s-Sad-Letter-of-an-Imaginary-Woman-/960x0.jpg?cropX1=0&cropX2=1600&cropY1=0&cropY2=900",
+      source: "Forbes",
+      url: "https://www.forbes.com/sites/swetakaushal/2024/10/31/exploring-the-effects-of-trauma-on-memory-with-an-indian-director/",
+    },
+
+    {
+      title:
+        "Nidhi Saxena’s Sad Letters of an Imaginary Woman captivates audiences at Busan International Film Festival 2024: “Cinema can instigate or draw attention”",
+      image:
+        "https://stat4.bollywoodhungama.in/wp-content/uploads/2024/10/Nidhi-Saxenas-Sad-Letters-of-an-Imaginary-Woman-captivates-audiences-at-Busan-International-Film-Festival-2024.jpg",
+      source: "Bollywood Hungama",
+      url: "https://www.bollywoodhungama.com/news/features/nidhi-saxenas-sad-letters-imaginary-woman-captivates-audiences-busan-international-film-festival-2024-cinema-can-instigate-draw-attention/",
+    },
+  ];
   return (
     <div className="bg-black text-white">
-      {/* About  */}
-      <div className="px-12 lg:px-[20vw] md:px-[10vw] py-16 ">
-        <div className="w-full  flex flex-col md:flex-row  border-gray-700 rounded-3xl cursor-pointer ">
-          {/* Image  */}
-          <div className="w-full  p-4">
-            <img src={image} alt="" className="rounded-lg" />
-          </div>
-          {/* Text  */}
-          <div className="p-4">
-            <p className="text-lg font-semibold">Nidhi SAXENA</p>
-            <br />
-            <p className="leading-7">
-              Nidhi Saxena is an Indian screenwriter and film director who
-              studied at the Film and Television Institute of India and the New
-              York Film Academy. Sad Letters of an Imaginary Woman is her first
-              feature film and also a recipient of the 2024 ACF Post-Production
-              Fund.
-            </p>
+      {/* About Section */}
+      <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-[10vw] lg:px-[12vw] py-16 gap-10">
+        {/* Image on Left */}
+        <div className="w-full md:w-[40%] lg:w-[30%] flex justify-center">
+          <div className="w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden rounded-md shadow-2xl">
+            <img
+              src={image}
+              alt="Nidhi Saxena"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
           </div>
         </div>
-      </div>
 
-      
+        {/* Text on Right */}
+        <div className="w-full md:w-[60%] lg:w-[65%] text-white text-center md:text-left">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">
+            Nidhi Saxena
+          </h2>
+          <h3 className="text-md md:text-lg lg:text-xl font-medium mb-5 text-gray-400">
+            Founder & Director, Forest Flower Films
+          </h3>
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-4">
+            Nidhi Saxena is an award-winning filmmaker and founder of Forest
+            Flower Films. Her debut feature premiered at the Busan International
+            Film Festival and screened worldwide.
+          </p>
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-4">
+            She is the first Indian woman director to receive the Asian Cinema
+            Fund and has led groundbreaking storytelling projects with tribal
+            girls in Rajasthan.
+          </p>
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+            With two acclaimed features, two children’s books, and a third film
+            in the works, Nidhi continues to tell fearless, boundary-pushing
+            stories.
+          </p>
+        </div>
+      </section>
 
-      {/* Work  */}
-      <div>
-        {/* Container  */}
-        <div className="px-4 lg:px-[10vw] py-10 flex justify-center flex-col items-center gap-4">
-              <h1 className="text-3xl font-extrabold">Recent Work</h1>
-                {/* Film Card */}
-                <div className="w-full max-w-4xl bg-black p-6 rounded-xl shadow-lg flex flex-col md:flex-row gap-6 cursor-pointer ">
-                  {/* Left Section: Image */}
-                  <div className="w-full md:w-[40%]">
-                    <img
-                      src={film}
-                      alt="Film Poster"
-                      className="w-full h-[300px] md:h-auto object-cover rounded-lg"
-                    />
-                  </div>
+      {/* Latest Fims Section  */}
+
+      {/* Latets Articles  */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-[10vw] lg:px-[12vw] py-16">
+        {articles.map((article, index) => (
+          <MediaCard key={index} article={article} />
+        ))}
         
-                  {/* Right Section: Content */}
-                  <div className="w-full md:w-[60%] text-left">
-                    <p className="text-xl font-bold text-white">
-                      Sad Letters of an Imaginary Woman
-                    </p>
-                    <p className="text-neutral-400 mt-2">Directed by Nidhi Saxena</p>
-                    <div className="text-neutral-300 mt-4">
-                      <p>
-                        <span className="font-semibold text-white">Producer: </span>
-                        Nila Madhab Panda, Vimukthi Jayasundhra, Ajender Chawla
-                      </p>
-                      <p>
-                        <span className="font-semibold text-white">Cast: </span> Anamika
-                        Tiwari, Bhadra Basu
-                      </p>
-                      <p className="mt-4">
-                        <span className="font-semibold text-white">
-                          About the Film:{" "}
-                        </span>
-                        Nidhi lives in an old house where she calls her childhood self,
-                        capturing sounds with a boom mic to transmit her words back to
-                        the past. As she navigates the house, memories of her absent
-                        father and her mother’s depression come to light. The film
-                        explores a mother-daughter relationship filled with love,
-                        resentment, and emotional turmoil, as Nidhi faces the same
-                        struggles her mother once did.
-                      </p>
-                      
-                    </div>
-        
-                    {/* Action Buttons */}
-                    <div className="flex flex-col  justify-between gap-4 mt-6">
-                      <button
-                        onClick={() =>
-                          (window.location.href =
-                            "https://www.youtube.com/watch?v=YvvemSwlczw")
-                        }
-                        className="w-full hover:bg-neutral-300 bg-white text-black font-bold text-lg rounded-full py-2"
-                      >
-                        Watch Trailer
-                      </button>
-                      <button
-                        onClick={() =>
-                          (window.location.href =
-                            "https://www.biff.kr/eng/html/program/prog_view.asp?idx=76031&c_idx=401&sp_idx=&QueryStep=2")
-                        }
-                        className="w-full hover:bg-neutral-300 bg-white text-black font-bold text-lg rounded-full py-2"
-                      >
-                        Join Us At Bhusan
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
       </div>
-      
     </div>
   );
 };
